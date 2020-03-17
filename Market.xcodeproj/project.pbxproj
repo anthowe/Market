@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		765A1A4A2421935500BBCF70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 765A1A492421935500BBCF70 /* GoogleService-Info.plist */; };
+		765A1A4C242197AC00BBCF70 /* FirebaseCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A1A4B242197AC00BBCF70 /* FirebaseCollectionReference.swift */; };
 		769CF27B2420462300429F3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769CF27A2420462300429F3D /* AppDelegate.swift */; };
 		769CF27D2420462300429F3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769CF27C2420462300429F3D /* SceneDelegate.swift */; };
 		769CF2822420462300429F3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 769CF2802420462300429F3D /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		2350BC6789B543B35A2A4C11 /* Pods-Market.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Market.release.xcconfig"; path = "Target Support Files/Pods-Market/Pods-Market.release.xcconfig"; sourceTree = "<group>"; };
 		6E60F33FA982B6A596B3614B /* Pods_Market.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Market.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		765A1A492421935500BBCF70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		765A1A4B242197AC00BBCF70 /* FirebaseCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollectionReference.swift; sourceTree = "<group>"; };
 		769CF2772420462300429F3D /* Market.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Market.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		769CF27A2420462300429F3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		769CF27C2420462300429F3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				769CF27C2420462300429F3D /* SceneDelegate.swift */,
 				769CF28E2420570B00429F3D /* CategoryCollectionViewController.swift */,
 				769CF2902420580300429F3D /* CategoryCollectionViewCell.swift */,
+				765A1A4B242197AC00BBCF70 /* FirebaseCollectionReference.swift */,
 				769CF2802420462300429F3D /* Main.storyboard */,
 				769CF2832420462600429F3D /* Assets.xcassets */,
 				769CF2852420462600429F3D /* LaunchScreen.storyboard */,
@@ -215,6 +218,7 @@
 			files = (
 				769CF2912420580300429F3D /* CategoryCollectionViewCell.swift in Sources */,
 				769CF27B2420462300429F3D /* AppDelegate.swift in Sources */,
+				765A1A4C242197AC00BBCF70 /* FirebaseCollectionReference.swift in Sources */,
 				769CF27D2420462300429F3D /* SceneDelegate.swift in Sources */,
 				769CF28F2420570B00429F3D /* CategoryCollectionViewController.swift in Sources */,
 			);
