@@ -48,6 +48,13 @@ class CategoryCollectionViewController: UICollectionViewController {
         
         return cell
     }
+    
+    //MARK: UICollectionView Delegate
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "categoryToItemsSeg", sender: categoryArray[indexPath.row])
+    }
+    
     //MARK: Download categories
     private func loadCategories(){
         downloadCategoriesFromFirebase { (allCategories) in
@@ -56,12 +63,20 @@ class CategoryCollectionViewController: UICollectionViewController {
             self.collectionView.reloadData()
         }
     }
+    //MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "categoryToItemsSeg"{
+            
+            let vc = segue.destination as! ItemsTableViewController
+            vc.category = sender as! Category
+        }
+    }
 
 }
 extension CategoryCollectionViewController : UICollectionViewDelegateFlowLayout{
  
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
+        let paddingSpace = sectionInsets.left * (itemsPerRow + 3)
         let availableWidth = view.frame.width - paddingSpace
         let widthPerItem = availableWidth / itemsPerRow
         

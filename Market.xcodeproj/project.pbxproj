@@ -18,6 +18,7 @@
 		769CF2912420580300429F3D /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769CF2902420580300429F3D /* CategoryCollectionViewCell.swift */; };
 		76DC6BC92423DD7C0083B4C8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6BC82423DD7C0083B4C8 /* Category.swift */; };
 		76DC6BCD2423DE3D0083B4C8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6BCC2423DE3D0083B4C8 /* Constants.swift */; };
+		76DC6BCF24244C960083B4C8 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6BCE24244C960083B4C8 /* ItemsTableViewController.swift */; };
 		ECB23BAFA37A0A5F1DDC9058 /* Pods_Market.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E60F33FA982B6A596B3614B /* Pods_Market.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		769CF2902420580300429F3D /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		76DC6BC82423DD7C0083B4C8 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		76DC6BCC2423DE3D0083B4C8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		76DC6BCE24244C960083B4C8 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
 		801BE7A6B7904D084E11CEAB /* Pods-Market.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Market.debug.xcconfig"; path = "Target Support Files/Pods-Market/Pods-Market.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				769CF28E2420570B00429F3D /* CategoryCollectionViewController.swift */,
+				76DC6BCE24244C960083B4C8 /* ItemsTableViewController.swift */,
 			);
 			path = "Main Views";
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			files = (
 				769CF2912420580300429F3D /* CategoryCollectionViewCell.swift in Sources */,
 				769CF27B2420462300429F3D /* AppDelegate.swift in Sources */,
+				76DC6BCF24244C960083B4C8 /* ItemsTableViewController.swift in Sources */,
 				765A1A4C242197AC00BBCF70 /* FirebaseCollectionReference.swift in Sources */,
 				769CF27D2420462300429F3D /* SceneDelegate.swift in Sources */,
 				76DC6BCD2423DE3D0083B4C8 /* Constants.swift in Sources */,
