@@ -8,6 +8,8 @@
 
 import Foundation
 
+//IDs and keys
+public let kFILEREFERENCE = "gs://market-52502.appspot.com"
 
 //Headers
 public let kUSERNAME = "User"
