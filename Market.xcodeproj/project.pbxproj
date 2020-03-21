@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7600944624256BA900508A07 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600944524256BA900508A07 /* Item.swift */; };
+		7600944824259B1D00508A07 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600944724259B1D00508A07 /* AddItemViewController.swift */; };
 		765A1A4A2421935500BBCF70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 765A1A492421935500BBCF70 /* GoogleService-Info.plist */; };
 		765A1A4C242197AC00BBCF70 /* FirebaseCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A1A4B242197AC00BBCF70 /* FirebaseCollectionReference.swift */; };
 		769CF27B2420462300429F3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769CF27A2420462300429F3D /* AppDelegate.swift */; };
@@ -27,6 +28,7 @@
 		2350BC6789B543B35A2A4C11 /* Pods-Market.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Market.release.xcconfig"; path = "Target Support Files/Pods-Market/Pods-Market.release.xcconfig"; sourceTree = "<group>"; };
 		6E60F33FA982B6A596B3614B /* Pods_Market.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Market.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7600944524256BA900508A07 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		7600944724259B1D00508A07 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		765A1A492421935500BBCF70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		765A1A4B242197AC00BBCF70 /* FirebaseCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollectionReference.swift; sourceTree = "<group>"; };
 		769CF2772420462300429F3D /* Market.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Market.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				769CF28E2420570B00429F3D /* CategoryCollectionViewController.swift */,
+				7600944724259B1D00508A07 /* AddItemViewController.swift */,
 				76DC6BCE24244C960083B4C8 /* ItemsTableViewController.swift */,
 			);
 			path = "Main Views";
@@ -265,6 +268,7 @@
 				769CF27B2420462300429F3D /* AppDelegate.swift in Sources */,
 				76DC6BCF24244C960083B4C8 /* ItemsTableViewController.swift in Sources */,
 				765A1A4C242197AC00BBCF70 /* FirebaseCollectionReference.swift in Sources */,
+				7600944824259B1D00508A07 /* AddItemViewController.swift in Sources */,
 				769CF27D2420462300429F3D /* SceneDelegate.swift in Sources */,
 				76DC6BCD2423DE3D0083B4C8 /* Constants.swift in Sources */,
 				769CF28F2420570B00429F3D /* CategoryCollectionViewController.swift in Sources */,

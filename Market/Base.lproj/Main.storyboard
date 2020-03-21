@@ -160,11 +160,99 @@
                             <outlet property="delegate" destination="GZh-Hs-vB9" id="tf2-ac-p3g"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Hsi-Qr-wjP"/>
+                    <navigationItem key="navigationItem" id="Hsi-Qr-wjP">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="zTI-eh-1me">
+                            <connections>
+                                <segue destination="XZi-ld-ohb" kind="show" id="z4u-FM-PlF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JpW-Lp-C39" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3321.739130434783" y="-216.29464285714286"/>
+        </scene>
+        <!--Add Item-->
+        <scene sceneID="e39-gI-ad4">
+            <objects>
+                <viewController id="XZi-ld-ohb" customClass="AddItemViewController" customModule="Market" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I1w-ta-Kjx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3I3-pq-bMY">
+                                <rect key="frame" x="20" y="110" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zkj-Mq-6lZ">
+                                <rect key="frame" x="20" y="152" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Desciption" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uc4-EO-tTL">
+                                <rect key="frame" x="20" y="196" width="374" height="128"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ofL-8Q-6cK"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlI-r7-KeU">
+                                <rect key="frame" x="20" y="349" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="A6z-tU-L8A"/>
+                                    <constraint firstAttribute="width" constant="65" id="DgI-q5-9BZ"/>
+                                </constraints>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraButtonPressed:" destination="XZi-ld-ohb" eventType="touchUpInside" id="qn5-xd-Xri"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="dcY-QG-9xR" firstAttribute="trailing" secondItem="uc4-EO-tTL" secondAttribute="trailing" constant="20" id="3rc-sy-sPl"/>
+                            <constraint firstItem="3I3-pq-bMY" firstAttribute="top" secondItem="dcY-QG-9xR" secondAttribute="top" constant="22" id="6b5-86-V78"/>
+                            <constraint firstItem="wlI-r7-KeU" firstAttribute="top" secondItem="uc4-EO-tTL" secondAttribute="bottom" constant="25" id="9y2-wU-Mk5"/>
+                            <constraint firstItem="wlI-r7-KeU" firstAttribute="leading" secondItem="dcY-QG-9xR" secondAttribute="leading" constant="20" id="Dsz-FK-LG0"/>
+                            <constraint firstItem="dcY-QG-9xR" firstAttribute="trailing" secondItem="3I3-pq-bMY" secondAttribute="trailing" constant="20" id="Jfh-wv-aR0"/>
+                            <constraint firstItem="uc4-EO-tTL" firstAttribute="leading" secondItem="dcY-QG-9xR" secondAttribute="leading" constant="20" id="OSK-0X-bK5"/>
+                            <constraint firstItem="3I3-pq-bMY" firstAttribute="leading" secondItem="dcY-QG-9xR" secondAttribute="leading" constant="20" id="TFT-U5-5hg"/>
+                            <constraint firstItem="zkj-Mq-6lZ" firstAttribute="leading" secondItem="dcY-QG-9xR" secondAttribute="leading" constant="20" id="Vhy-IV-gQJ"/>
+                            <constraint firstItem="zkj-Mq-6lZ" firstAttribute="top" secondItem="3I3-pq-bMY" secondAttribute="bottom" constant="8" id="cOd-uQ-P7o"/>
+                            <constraint firstItem="dcY-QG-9xR" firstAttribute="trailing" secondItem="zkj-Mq-6lZ" secondAttribute="trailing" constant="20" id="jMd-fs-TfR"/>
+                            <constraint firstItem="uc4-EO-tTL" firstAttribute="top" secondItem="zkj-Mq-6lZ" secondAttribute="bottom" constant="10" id="qvm-rh-yng"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dcY-QG-9xR"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="bBN-Hi-q7x" appends="YES" id="irB-zb-sJ6"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Item" id="gAt-uj-S3g">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="8LU-ed-L2K">
+                            <connections>
+                                <action selector="doneBarButtonPressed:" destination="XZi-ld-ohb" id="zi4-nh-jDm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="uc4-EO-tTL" id="etj-F4-cqz"/>
+                        <outlet property="priceTextField" destination="zkj-Mq-6lZ" id="dA2-DF-9gj"/>
+                        <outlet property="titleTextField" destination="3I3-pq-bMY" id="A0J-Lh-0YT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="npi-vr-9Ln" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="bBN-Hi-q7x">
+                    <connections>
+                        <action selector="backgroundTapped:" destination="XZi-ld-ohb" id="nQp-z0-lT5"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4044.9275362318845" y="-216.29464285714286"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SVf-fU-FlO">
