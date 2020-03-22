@@ -29,10 +29,21 @@ class AddItemViewController: UIViewController {
     
     var itemImages: [UIImage?] = []
     
+// MARK: View lifecycles
+    
+       
     override func viewDidLoad() {
         super.viewDidLoad()
         print(category.id)
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        activityIndicator = NVActivityIndicatorView(frame: CGRect(x: self.view.frame.width / 2 - 30, y: self.view.frame.height / 2 - 30,
+                                                                  width: 60, height: 60),
+                                                    type: .ballPulse,
+                                                    color: UIColor.red, padding: nil)
     }
     
 //MARK: IBActions
@@ -79,6 +90,8 @@ class AddItemViewController: UIViewController {
     
     private func saveToFirebase(){
         
+        showLoadingIndicator()
+        
         let item = Item()
         item.id = UUID().uuidString
         item.name = titleTextField.text!
@@ -91,6 +104,7 @@ class AddItemViewController: UIViewController {
             uploadImages(images: itemImages, itemID: item.id) { (imageLinkArray) in
                 item.imageLinks = imageLinkArray
                 saveItemToFirestore(item)
+                self.hideLoadingIndicator()
                 self.popTheView()
             }
             
@@ -99,6 +113,24 @@ class AddItemViewController: UIViewController {
             popTheView()
         }
         
+    }
+    // MARK: Activity Indicator
+    
+    private func showLoadingIndicator(){
+        
+        if activityIndicator != nil{
+            self.view.addSubview(activityIndicator!)
+            activityIndicator!.startAnimating()
+            
+        }
+    }
+    
+    private func hideLoadingIndicator(){
+        
+        if activityIndicator != nil {
+            self.view.removeFromSuperview()
+            activityIndicator!.stopAnimating()
+        }
     }
     //MARK: Show image gallery
     private func showImageGallery(){
