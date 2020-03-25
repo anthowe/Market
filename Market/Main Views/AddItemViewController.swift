@@ -56,10 +56,11 @@ class AddItemViewController: UIViewController {
             saveToFirebase()
             
         }else{
-            print("Error All fields are required")
-            
-           //TODO: Show error to the user
-            
+           
+            self.hud.textLabel.text = "Error all fields are required!"
+            self.hud.indicatorView = JGProgressHUDIndicatorView()
+            self.hud.show(in: self.view)
+            self.hud.dismiss(afterDelay: 2.0)
         }
     }
     
